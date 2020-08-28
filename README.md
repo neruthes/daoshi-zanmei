@@ -54,6 +54,15 @@ D 代表 Date，A 代表 Author，S 代表 Summary，F 代表 Full。
 
 在两条赞美之间，应当使用 2 个换行符隔开。最新增加的在最下方。
 
+## 最新摘要
+
+赞美数 | 通用名称 | 机构
+--- | ---
+0 | [施一公](https://neruthes.xyz/daoshi-zanmei/reviews/施_一公-1) | tsinghua.edu.cn
+0 | [姚期智](https://neruthes.xyz/daoshi-zanmei/reviews/姚_期智-1) | tsinghua.edu.cn
+
+本列表使用字母表 A-Z 排序，下划线比 A 靠前。使用汉字书写的人名，根据本人国籍决定使用汉语拼音方案或大韩民国文观部 2001 式韩国语罗马字方案或平文式日本语罗马字。
+
 ## 版权
 
 本 repo 本体以 GPLv2 发布，任何贡献者同意提交进来的所有内容均会被以 GPLv2 发布。
@@ -61,3 +70,4 @@ D 代表 Date，A 代表 Author，S 代表 Summary，F 代表 Full。
 ## 后续开发计划
 
 - 用脚本来自动化生成方便人类阅读的网页
+- 用脚本来自动化统计赞美数据
