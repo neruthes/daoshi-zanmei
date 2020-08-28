@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: -apple-system, 'SF Pro Text', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Noto Sans SC', 'Noto Sans CJK SC', 'PingFang SC', sans-serif;
+    text-rendering: optimizeLegibility;
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------------------------------------------- */
+
+
+
+/* ------------------------------------------------- */
+.review-item {
+}
+.review-item--index {
+    color: #777;
+    float: right;
+}
+.review-item--date-and-author {
+    font-size: 18px;
+}
+.review-item--summary {
+    font-size: 22px;
+}
+.review-item--full-text {
+    font-size: 18px;
+}
+/* ------------------------------------------------- */
