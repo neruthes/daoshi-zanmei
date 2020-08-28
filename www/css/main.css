@@ -5,16 +5,55 @@
 html, body {
     font-family: -apple-system, 'SF Pro Text', 'Helvetica Neue', 'Helvetica', 'Segoe UI', 'Noto Sans SC', 'Noto Sans CJK SC', 'PingFang SC', sans-serif;
     text-rendering: optimizeLegibility;
+    background: #EEE;
     padding: 0;
     margin: 0;
 }
 
+.content {
+    max-width: 800px;
+    padding: 0;
+    margin: 0 auto;
+}
+.content-inner {
+    max-width: 720px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------- */
+h1 a {
+    color: inherit;
+    text-decoration: inherit;
+}
 /* ------------------------------------------------- */
 
+.section-profile {
+    background: #FFF;
+    border-radius: 8px;
+    padding: 20px 0;
+    margin: 0 auto 40px;
+}
 
 
+.section-reviews {
+}
+
+
+/* ------------------------------------------------- */
+.profile--name {
+    font-size: 32px;
+}
+.profile--meta {
+    font-size: 22px;
+}
+.profile--bio {
+    font-size: 20pxpx;
+}
 /* ------------------------------------------------- */
 .review-item {
+    background: #FFF;
+    border-radius: 8px;
 }
 .review-item--index {
     color: #777;

@@ -7,7 +7,7 @@ const exec = child_process.exec;
 
 // -----------------------------------------------------------------------------
 
-const renderReviewsList = function (reviewItem, i) {
+const renderReviewItem = function (reviewItem, i) {
     return `<div class="review-item">
         <div class="review-item--index">
             #${i}
@@ -15,13 +15,17 @@ const renderReviewsList = function (reviewItem, i) {
         <div class="review-item--date-and-author">
             ${reviewItem.date} | ${reviewItem.author}
         </div>
-        <div class="review-item--summary">
+        <h3 class="review-item--summary">
             ${reviewItem.summary}
-        </div>
+        </h3>
         <div class="review-item--full-text">
             ${reviewItem.full}
         </div>
     </div>`;
+};
+
+const renderReviewsList = function (reviewsList, i) {
+    return reviewsList.map(renderReviewItem).reverse().join('');
 };
 
 var listOfFiles = fs.readdirSync('reviews');
@@ -50,38 +54,55 @@ listOfFiles.map(function (fileName) {
             full: lines[3].slice(3)
         };
     })
-    console.log(entryDataObj);
+    console.log(entryDataObj.list);
     var myHtml = `
         <!DOCTYPE html>
         <html>
             <head>
+                <meta charset="utf-8" />
                 <title>${entryDataObj.meta.COM} - 导师赞美</title>
                 <link rel="stylesheet" href="../css/main.css" />
             </head>
             <body>
                 <div class="container">
-                    <header>
-                        <h1>导师赞美</h1>
+                    <header class="content">
+                        <div class="content-inner">
+                            <h1><a href="../../">导师赞美</a></h1>
+                        </div>
                     </header>
                 </div>
                 <div class="container">
-                    <div>
-                        <div class="profile">
-                            <h2>${entryDataObj.meta.COM}</h2>
-                            <p>${entryDataObj.meta.INS} - ${entryDataObj.meta.DEP}</p>
-                            <p>简介：<br />${entryDataObj.meta.DES}</p>
+                    <div class="section-profile content">
+                        <div class="">
+                            <div class="content-inner">
+                                <h2 class="profile--name">${entryDataObj.meta.COM}</h2>
+                                <p class="profile--meta">${entryDataObj.meta.INS} - ${entryDataObj.meta.DEP}</p>
+                                <p class="profile--bio">简介：<br />${entryDataObj.meta.DES}</p>
+                            </div>
                         </div>
-                        <div class="reviews">
-                            ${renderReviewsList(${entryDataObj.meta.list})}
+                    </div>
+                    <div class="content" style="padding: 20px 0 40px">
+                        <h3 class="content-inner">
+                            赞美列表（${entryDataObj.list.length}）
+                        </h3>
+                    </div>
+                    <div class="section-profile content">
+                        <div class="">
+                            <div class="content-inner">
+                                ${renderReviewsList(entryDataObj.list)}
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="container">
-                    <footer>
+                    <footer class="content">
+                        <div class="content-inner">
+                            &copy; 2020 导师赞美<br />
+                            GitHub: <a href="https://github.com/neruthes/daoshi-zanmei">neruthes/daoshi-zanmei</a>
+                        </div>
                     </footer>
                 </div>
             </body>
-        </html>
-    `
+        </html>`;
     fs.writeFileSync(`www/reviews/${stdName}.html`, myHtml);
 })

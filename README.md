@@ -60,8 +60,8 @@ D 代表 Date，A 代表 Author，S 代表 Summary，F 代表 Full。
 
 赞美数 | 通用名称 | 机构
 --- | --- | ---
-0 | [施一公](https://neruthes.xyz/daoshi-zanmei/reviews/施_一公-1) | tsinghua.edu.cn
-0 | [姚期智](https://neruthes.xyz/daoshi-zanmei/reviews/姚_期智-1) | tsinghua.edu.cn
+0 | [施一公](https://neruthes.xyz/daoshi-zanmei/www/reviews/施_一公-1.html) | tsinghua.edu.cn
+0 | [姚期智](https://neruthes.xyz/daoshi-zanmei/www/reviews/姚_期智-1.html) | tsinghua.edu.cn
 
 本列表使用字母表 A-Z 排序，下划线比 A 靠前。使用汉字书写的人名，根据本人国籍决定使用汉语拼音方案或大韩民国文观部 2001 式韩国语罗马字方案或平文式日本语罗马字。
 
@@ -69,8 +69,12 @@ D 代表 Date，A 代表 Author，S 代表 Summary，F 代表 Full。
 
 本 repo 本体以 GPLv2 发布，任何贡献者同意提交进来的所有内容均会被以 GPLv2 发布。
 
+## 注意事项
+
+- 换行符使用 LF。
+- 编码使用 UTF-8。
+
 ## 后续开发计划
 
-- 用脚本来自动化生成方便人类阅读的网页。
 - 用脚本来自动化统计赞美数据。
 - 用脚本来自动化检测原始数据中的格式错误。
