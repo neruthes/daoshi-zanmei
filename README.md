@@ -59,7 +59,7 @@ D 代表 Date，A 代表 Author，S 代表 Summary，F 代表 Full。
 ## 最新摘要
 
 赞美数 | 通用名称 | 机构
---- | ---
+--- | --- | ---
 0 | [施一公](https://neruthes.xyz/daoshi-zanmei/reviews/施_一公-1) | tsinghua.edu.cn
 0 | [姚期智](https://neruthes.xyz/daoshi-zanmei/reviews/姚_期智-1) | tsinghua.edu.cn
 
