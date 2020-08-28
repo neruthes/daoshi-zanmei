@@ -31,7 +31,7 @@ const renderReviewsList = function (reviewsList, i) {
 var listOfFiles = fs.readdirSync('reviews');
 
 listOfFiles.map(function (fileName) {
-    var stdName = fileName.replace('.md', '');
+    var stdName = fileName.replace('.txt', '');
     var rawData = fs.readFileSync(`reviews/${fileName}`).toString().replace(/\r/g, '').trim();
     var midData1 = rawData.split('\n\n------\n\n');
     var midData2 = midData1[0].split('\n');
@@ -85,6 +85,9 @@ listOfFiles.map(function (fileName) {
                         <h3 class="content-inner">
                             赞美列表（${entryDataObj.list.length}）
                         </h3>
+                    </div>
+                    <div class="content" style="padding: 20px 0 40px; text-align: center;">
+                        <a style="color: #FFF; text-decoration: none; background: #07F; border-radius: 6px; display: inline-block; padding: 10px 18px; margin: 0;" href="https://github.com/neruthes/daoshi-zanmei/edit/master/reviews/${entryDataObj.meta.STD}.md">为这位导师添加赞美</a>
                     </div>
                     <div class="section-profile content">
                         <div class="">
