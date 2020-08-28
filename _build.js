@@ -99,7 +99,7 @@ listOfFiles.map(function (fileName) {
                 </div>
                 <div class="container">
                     <footer class="content">
-                        <div class="content-inner">
+                        <div class="content-inner" style="padding: 80px 0 100px;">
                             &copy; 2020 导师赞美<br />
                             GitHub: <a href="https://github.com/neruthes/daoshi-zanmei">neruthes/daoshi-zanmei</a>
                         </div>
