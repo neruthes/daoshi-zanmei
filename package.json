@@ -1,0 +1,22 @@
+{
+  "name": "daoshi-zanmei",
+  "version": "1.0.0",
+  "description": "本 repo 旨在发动一场社会实验。在导师评价网退出历史舞台后，帮助导师们得到赞美。",
+  "main": "_build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neruthes/daoshi-zanmei.git"
+  },
+  "author": "Neruthes",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/neruthes/daoshi-zanmei/issues"
+  },
+  "homepage": "https://github.com/neruthes/daoshi-zanmei#readme",
+  "dependencies": {
+    "@alvarocastro/quicksort": "^1.0.3"
+  }
+}
