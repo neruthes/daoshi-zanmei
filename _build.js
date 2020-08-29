@@ -94,7 +94,7 @@ BuildTargets.DetailPages = function () {
                             </h3>
                         </div>
                         <div class="content" style="padding: 20px 0 40px; text-align: center;">
-                            <a style="color: #FFF; text-decoration: none; background: #07F; border-radius: 6px; display: inline-block; padding: 10px 18px; margin: 0;" href="https://github.com/neruthes/daoshi-zanmei/edit/master/reviews/${entryDataObj.meta.STD}.md">为这位导师添加赞美</a>
+                            <a style="color: #FFF; text-decoration: none; background: #07F; border-radius: 6px; display: inline-block; padding: 10px 18px; margin: 0;" href="https://github.com/neruthes/daoshi-zanmei/edit/master/reviews/${entryDataObj.meta.STD}.txt">为这位导师添加赞美</a>
                         </div>
                         <div class="section-profile content">
                             <div class="">
