@@ -194,7 +194,7 @@ BuildTargets.ProfilesList = function () {
                 </div>
             </body>
         </html>`;
-    fs.writeFileSync(`www/ProfilesList.html`, myHtml);
+    fs.writeFileSync(`index.html`, myHtml);
     fs.writeFileSync(`README.md`, fs.readFileSync('README-tmpl.md').toString().replace('{{TABLE}}', myMdTable));
 };
 
@@ -202,6 +202,7 @@ const myTarget = process.argv[2];
 if (Object.keys(BuildTargets).indexOf(myTarget) !== -1) {
     console.log(`Build target: ${myTarget}.\nBuilding...`);
     BuildTargets[myTarget]();
+    console.log(`Done.`);
 } else {
     console.error(`Build target "${myTarget}" does not exist.`)
 };
