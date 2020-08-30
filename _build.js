@@ -150,7 +150,7 @@ BuildTargets.ProfilesList = function () {
             <head>
                 <meta charset="utf-8" />
                 <title>导师列表 - 导师赞美</title>
-                <link rel="stylesheet" href="./css/main.css" />
+                <link rel="stylesheet" href="./www/css/main.css" />
             </head>
             <body>
                 <div class="container">
